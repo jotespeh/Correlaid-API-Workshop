@@ -34,3 +34,9 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+
+# Virtual env 
+/python/env
+/python/config.py
+/python/__pycache__
+.vscode
