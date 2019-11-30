@@ -10,9 +10,10 @@ Who are We?
 
 ## Jan
 
-Works his magic at XXX
+Likes JavaScript
 
-Uni Konstanz
+Developer @ cause&effect
+
 ***
 ## Jakob
 
