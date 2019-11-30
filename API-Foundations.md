@@ -1,4 +1,4 @@
-Slight RESTful - Introduction to API Design
+Slighty RESTful - Introduction to API Design
 ========================================================
 author: Jan Dix and Jakob Speier
 date: 
@@ -81,4 +81,45 @@ import requests
 r = requests.get("http://www.example.com/past/wet?tortelli")
 r.status_code
 ```
+
+Flask
+=========
+* Flask is a microframework
+* It handles all the messy stuff so we can write short, easy to understand code
+* Not exclusively designed for APIs but ideal for prototyping
+
+
+SQLAlchemy
+========
+* Abstraction Layer for SQL
+* We can work with classes and objects in idiomatic python instead of writing SQL queries ourselves
+* Database agnostic: Support SQLite, MariaDB, Postgres and many more
+
+Insomnia
+======
+* Nice UI for testing API Endpoints
+
+https://insomnia.rest/
+
+
+And now it's your turn!
+=======
+https://speier.cc/api.zip
+
+
+Where to go from here?
+======
+* Miguel  Grinbergs Flask Tutorial teaches you _everything_
+https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+
+
+
+
+
+
+
+
+
+
+
 
