@@ -6,7 +6,7 @@ source("r/db.R")
 
 #* List all todo items
 #* @get /todo/list
-function(){
+function() {
   conn <- db_connect()
   query <- "SELECT * FROM todo_items;"
   response <- dbGetQuery(conn, query)
@@ -32,6 +32,9 @@ function(title = NULL, comment = NULL) {
   if (is.null(comment)) return("Comment is missing.")
   conn <- db_connect()
   sql <- "INSERT INTO todo_items (title, comment) VALUES (?title, ?comment);"
+  query <- sqlInterpolate(conn, sql, title = title, comment = comment)
+  response <- dbGetQuery(conn, query)
+  sql <- "SELECT * FROM todo_items WHERE title = ?title AND comment = ?comment;"
   query <- sqlInterpolate(conn, sql, title = title, comment = comment)
   response <- dbGetQuery(conn, query)
   dbDisconnect(conn)
@@ -61,4 +64,13 @@ function(id, title = NULL, comment = NULL) {
   response <- dbGetQuery(conn, query)
   dbDisconnect(conn)
   return(response)
+}
+
+#* Delete a single todo item
+#* @delete /todo/<id>
+function(id) {
+  sql <- "DELETE FROM todo_items WHERE id = ?id"
+  query <- sqlInterpolate(conn, sql, id = id)
+  response <- dbGetQuery(conn, query)
+  return("Todo item was sucessfully deleted.")
 }
