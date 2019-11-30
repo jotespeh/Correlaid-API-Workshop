@@ -2,10 +2,10 @@ from flask import Flask, jsonify, request
 from db import Item, session
 from utils import row_to_dict
 from datetime import datetime
-from flask_cors import CORS
+
 
 app = Flask(__name__)
-CORS(app)
+
 
  
 @app.route('/item/list')

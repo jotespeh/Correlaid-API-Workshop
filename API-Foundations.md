@@ -1,4 +1,4 @@
-Slighty RESTful - Introduction to API Design
+Slight RESTful - Introduction to API Design
 ========================================================
 author: Jan Dix and Jakob Speier
 date: 
@@ -10,16 +10,11 @@ Who are We?
 
 ## Jan
 
-Likes JavaScript
-
-Developer @ cause&effect
-
-***
+Likes JavaScriptDeveloper @ CorrelAid + cause&effect ***
 ## Jakob
 
-Likes python, pasta and peperonis.
+Likes python, pasta and peperonis.Uni Konstanz
 
-Uni Konstanz
 
 Why API? Why REST?
 ========================================================
@@ -30,12 +25,14 @@ Why API? Why REST?
 * Freedom for programmers to add and alter endpoints
 * No need to expose DB to the Internet
 
-
 Why API? Why REST?
 ========================================================
-## RESTful
 
-
+# **Re**presentational **S**tate **T**ransfer- Client-server architecture
+- Statelessness
+- Cacheability
+- Layered system
+- Uniform interface
 
 
 HTTP Basics (1/N)
@@ -48,6 +45,7 @@ HTTP Basics (1/N)
 * 404: Resource Missing
 * 500: Server is having troubles
 
+
 HTTP Basics (2/N) 
 ========================================================
 ## Methods
@@ -59,12 +57,12 @@ Most often - think CRUD
 
 These cover most use cases for Databases!
 
+
 HTTP Basics (3/N)
 ========================================================
 incremental: true
 ## URI
-
-<span class="red">http://</span>www.example.com/pasta/dry?type=farfalle
+<span>http://</span>www.example.com/pasta/dry?type=farfalle
 
 * http:// : Protocol
 * www\.example : Host
@@ -72,16 +70,6 @@ incremental: true
 * /dry : Parameter
 * ?type : Query
 * =farfalle : Query Value
-
-Hands on!
-========================================================
-
-```python
-import requests
-
-r = requests.get("http://www.example.com/past/wet?tortelli")
-r.status_code
-```
 
 Flask
 =========
@@ -105,6 +93,8 @@ https://insomnia.rest/
 
 And now it's your turn!
 =======
+
+
 https://speier.cc/api.zip
 
 
