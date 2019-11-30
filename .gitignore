@@ -40,3 +40,6 @@ rsconnect/
 /python/config.py
 /python/__pycache__
 .vscode
+
+# local environment variables
+env.R
